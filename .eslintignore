@@ -1,4 +1,4 @@
 node_modules
 dist 
 jest.config.ts
-babel.config.ts
+babel.config.js
