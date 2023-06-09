@@ -21,6 +21,9 @@ const initMongoDBConnection = (config: ConnectConfig): void => {
             });
     }
 
+    //start connection
+    connect();
+
     mongoose.connection.on('connected', () => {
         console.info('Successfully connect to MongoDB');
     });
