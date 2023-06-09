@@ -1,16 +1,15 @@
-import express , {Application} from 'express';
+import initServer from "./src/server";
+import initMongoDBConnection, { ConnectConfig } from './src/frameworks/database/mongoDB/connection';
 import dotenv from 'dotenv';
-import http , {Server} from 'http';
+import { getEnv } from "./src/utils/envUtils";
 dotenv.config();
 
-const initServer = () => {
-    const PORT: number = Number(process.env.PORT) || 2000;
-    const app: Application = express();
+const port: number = getEnv('PORT'),
+    connectConfig: ConnectConfig = {
+        reconnectInterval: getEnv('RECONNECT_INTERVAL'),
+        mongoConnectionUri: getEnv('MONGO_CONNECTION_URI')
+    }
 
-    const server: Server = http.createServer(app);
-    server.listen(PORT,() => {
-        console.log(`Server running on port: ${PORT}`);
-    })
-}
 
-initServer();
+initMongoDBConnection(connectConfig);
+initServer(port);
