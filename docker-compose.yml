@@ -20,7 +20,7 @@ services:
 
   backend:
     build: 
-        dockerfile: ./.devcontainer/Dockerfile
+        dockerfile: ./.devcontainer/backend.Dockerfile 
         context: .
     container_name: server
     restart: always
