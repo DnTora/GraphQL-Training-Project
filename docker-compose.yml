@@ -2,7 +2,9 @@ version: "3"
 
 services:
   frontend:
-    build: client
+    build: 
+        dockerfile: ../.devcontainer/frontend.Dockerfile
+        context: client
     container_name: client
     restart: always
     ports:
@@ -17,7 +19,9 @@ services:
       - backend
 
   backend:
-    build: .
+    build: 
+        dockerfile: ./.devcontainer/Dockerfile
+        context: .
     container_name: server
     restart: always
     ports:
@@ -35,6 +39,9 @@ services:
     container_name: mongo
     restart: always
     image: mongo:4.2.0
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=example
     volumes:
       - ./data:/data/db
     networks:
