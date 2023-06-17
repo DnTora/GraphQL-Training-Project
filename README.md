@@ -1,14 +1,8 @@
 # Graphql Training Project
 
-![React Logo](https://path/to/react-logo.png)
-![Vite Logo](https://path/to/vite-logo.png)
-![GraphQL Logo](https://path/to/graphql-logo.png)
-![Express Logo](https://path/to/express-logo.png)
-![Docker Logo](https://path/to/docker-logo.png)
-![ESLint Logo](https://path/to/eslint-logo.png)
-![Prettier Logo](https://path/to/prettier-logo.png)
-![TypeScript Logo](https://path/to/typescript-logo.png)
-![Jest Logo](https://path/to/jest-logo.png)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" width="120" alt="React Icon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/250px-Typescript_logo_2020.svg.png" width="120" alt="TypeScript Icon">
+
 
 ## Description
 
