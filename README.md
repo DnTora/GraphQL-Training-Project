@@ -26,7 +26,7 @@ Follow these steps to get the project up and running:
 
 1. Clone the repository.
 2. Install dependencies: `npm install`.
-3. Start the development server: `npm run dev`.
+3. Start the development server: `npm run dev / docker compose -d --build`.
 
 
 ## Testing
